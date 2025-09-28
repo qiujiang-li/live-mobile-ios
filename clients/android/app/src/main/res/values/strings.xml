@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Live Mobile</string>
+    <string name="camera_permission_denied">Camera permission is required to show the preview.</string>
+    <string name="camera_initialization_failed">Unable to start the camera.</string>
+</resources>
