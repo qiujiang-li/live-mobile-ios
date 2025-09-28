@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+DIR="$(cd "$(dirname "$0")" && pwd)"
+WRAPPER_JAR="$DIR/gradle/wrapper/gradle-wrapper.jar"
+
+if [ -f "$WRAPPER_JAR" ]; then
+  CLASSPATH="$WRAPPER_JAR"
+  exec java -Xmx64m -cp "$CLASSPATH" org.gradle.wrapper.GradleWrapperMain "$@"
+fi
+
+if command -v gradle >/dev/null 2>&1; then
+  exec gradle "$@"
+fi
+
+echo "Gradle wrapper JAR not found and 'gradle' is not installed. Please install Gradle 8.2.2 or run this script from an environment with the wrapper jar." >&2
+exit 1
