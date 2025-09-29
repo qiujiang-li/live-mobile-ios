@@ -22,8 +22,8 @@ struct CameraPreview: UIViewRepresentable {
         private let sessionQueue = DispatchQueue(label: "camera.session.queue")
 
         func startSession(with session: AVCaptureSession) {
-            sessionQueue.async {
-                configure(session: session)
+            sessionQueue.async { [self] in
+                self.configure(session: session)
                 if !session.isRunning {
                     session.startRunning()
                 }
