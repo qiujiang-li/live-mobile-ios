@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="1280" viewBox="0 0 640 1280">
+  <rect x="40" y="40" width="560" height="1200" rx="60" ry="60" fill="#0a0f29" fill-opacity="0.65"/>
+  <rect x="100" y="360" width="440" height="560" rx="40" ry="40" fill="#ffffff" stroke="#0a0f29" stroke-width="4"/>
+  <text x="320" y="420" font-family="SF Pro Display, Helvetica" font-size="26" fill="#0a0f29" text-anchor="middle">Select destinations</text>
+  <text x="320" y="460" font-family="SF Pro Display, Helvetica" font-size="18" fill="#4a4f63" text-anchor="middle">Choose one or more streaming platforms</text>
+
+  <rect x="140" y="500" width="360" height="100" rx="26" ry="26" fill="#f5f7fb" stroke="#d8dbe6" stroke-width="2"/>
+  <text x="220" y="550" font-family="SF Pro Display, Helvetica" font-size="22" fill="#0a0f29">TikTok</text>
+  <circle cx="460" cy="550" r="26" fill="#4caf50"/>
+  <text x="460" y="558" font-family="SF Pro Display, Helvetica" font-size="22" fill="#ffffff" text-anchor="middle">✓</text>
+  <text x="220" y="580" font-family="SF Pro Display, Helvetica" font-size="14" fill="#4a4f63">Overlay pipeline ready</text>
+
+  <rect x="140" y="620" width="360" height="100" rx="26" ry="26" fill="#f5f7fb" stroke="#d8dbe6" stroke-width="2"/>
+  <text x="220" y="670" font-family="SF Pro Display, Helvetica" font-size="22" fill="#0a0f29">YouTube</text>
+  <circle cx="460" cy="670" r="26" fill="#4caf50"/>
+  <text x="460" y="678" font-family="SF Pro Display, Helvetica" font-size="22" fill="#ffffff" text-anchor="middle">✓</text>
+  <text x="220" y="700" font-family="SF Pro Display, Helvetica" font-size="14" fill="#4a4f63">4K output available</text>
+
+  <rect x="140" y="740" width="360" height="100" rx="26" ry="26" fill="#fef5f5" stroke="#f6b5b5" stroke-width="2"/>
+  <text x="220" y="790" font-family="SF Pro Display, Helvetica" font-size="22" fill="#0a0f29">Twitch</text>
+  <circle cx="460" cy="790" r="26" fill="#ffffff" stroke="#d8dbe6" stroke-width="2"/>
+  <text x="460" y="798" font-family="SF Pro Display, Helvetica" font-size="22" fill="#d8dbe6" text-anchor="middle">+</text>
+  <text x="220" y="820" font-family="SF Pro Display, Helvetica" font-size="14" fill="#d36c6c">Reconnect required</text>
+
+  <rect x="180" y="880" width="280" height="70" rx="24" ry="24" fill="#0a0f29"/>
+  <text x="320" y="925" font-family="SF Pro Display, Helvetica" font-size="26" fill="#ffffff" text-anchor="middle">Go Live</text>
+
+  <text x="320" y="980" font-family="SF Pro Display, Helvetica" font-size="16" fill="#9aa0b5" text-anchor="middle">Streaming starts once overlay is synced</text>
+  <text x="320" y="1040" font-family="SF Pro Display, Helvetica" font-size="18" fill="#ffffff" text-anchor="middle">Cancel</text>
+</svg>
