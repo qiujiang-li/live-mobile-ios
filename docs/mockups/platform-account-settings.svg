@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="1280" viewBox="0 0 640 1280">
+  <rect x="40" y="40" width="560" height="1200" rx="60" ry="60" fill="#f5f7fb" stroke="#d8dbe6" stroke-width="4"/>
+  <text x="320" y="140" font-family="SF Pro Display, Helvetica" font-size="30" fill="#0a0f29" text-anchor="middle">Manage Platforms</text>
+  <text x="320" y="180" font-family="SF Pro Display, Helvetica" font-size="18" fill="#4a4f63" text-anchor="middle">Connect accounts and set defaults</text>
+
+  <rect x="100" y="220" width="440" height="180" rx="32" ry="32" fill="#ffffff" stroke="#d8dbe6" stroke-width="2"/>
+  <text x="140" y="260" font-family="SF Pro Display, Helvetica" font-size="22" fill="#0a0f29">YouTube</text>
+  <text x="140" y="292" font-family="SF Pro Display, Helvetica" font-size="16" fill="#4a4f63">Creator Studio (oauth@user.com)</text>
+  <rect x="380" y="240" width="120" height="44" rx="16" ry="16" fill="#0a0f29"/>
+  <text x="440" y="270" font-family="SF Pro Display, Helvetica" font-size="18" fill="#ffffff" text-anchor="middle">Reconnect</text>
+  <line x1="120" y1="312" x2="520" y2="312" stroke="#e4e7f0" stroke-width="2"/>
+  <text x="140" y="344" font-family="SF Pro Display, Helvetica" font-size="16" fill="#0a0f29">Default privacy</text>
+  <text x="440" y="344" font-family="SF Pro Display, Helvetica" font-size="16" fill="#4a4f63" text-anchor="end">Unlisted ▾</text>
+  <text x="140" y="380" font-family="SF Pro Display, Helvetica" font-size="16" fill="#0a0f29">Stream latency</text>
+  <text x="440" y="380" font-family="SF Pro Display, Helvetica" font-size="16" fill="#4a4f63" text-anchor="end">Low ▾</text>
+
+  <rect x="100" y="420" width="440" height="160" rx="32" ry="32" fill="#ffffff" stroke="#d8dbe6" stroke-width="2"/>
+  <text x="140" y="460" font-family="SF Pro Display, Helvetica" font-size="22" fill="#0a0f29">TikTok</text>
+  <text x="140" y="492" font-family="SF Pro Display, Helvetica" font-size="16" fill="#f57c00">Action required • Session expired</text>
+  <rect x="360" y="448" width="140" height="44" rx="16" ry="16" fill="#f57c00"/>
+  <text x="430" y="478" font-family="SF Pro Display, Helvetica" font-size="18" fill="#ffffff" text-anchor="middle">Re-authenticate</text>
+  <line x1="120" y1="512" x2="520" y2="512" stroke="#e4e7f0" stroke-width="2"/>
+  <text x="140" y="544" font-family="SF Pro Display, Helvetica" font-size="16" fill="#0a0f29">Stream category</text>
+  <text x="440" y="544" font-family="SF Pro Display, Helvetica" font-size="16" fill="#4a4f63" text-anchor="end">Music ▾</text>
+
+  <rect x="100" y="600" width="440" height="200" rx="32" ry="32" fill="#ffffff" stroke="#d8dbe6" stroke-width="2"/>
+  <text x="140" y="640" font-family="SF Pro Display, Helvetica" font-size="22" fill="#0a0f29">Twitch</text>
+  <text x="140" y="672" font-family="SF Pro Display, Helvetica" font-size="16" fill="#4a4f63">Not connected</text>
+  <rect x="360" y="628" width="140" height="44" rx="16" ry="16" fill="#0a0f29"/>
+  <text x="430" y="658" font-family="SF Pro Display, Helvetica" font-size="18" fill="#ffffff" text-anchor="middle">Connect</text>
+  <line x1="120" y1="688" x2="520" y2="688" stroke="#e4e7f0" stroke-width="2"/>
+  <text x="140" y="720" font-family="SF Pro Display, Helvetica" font-size="16" fill="#0a0f29">Auto-start preview</text>
+  <rect x="420" y="702" width="60" height="32" rx="16" ry="16" fill="#d8dbe6"/>
+  <circle cx="440" cy="718" r="14" fill="#ffffff" stroke="#b5bbcc" stroke-width="2"/>
+  <text x="140" y="756" font-family="SF Pro Display, Helvetica" font-size="16" fill="#0a0f29">Primary server</text>
+  <text x="440" y="756" font-family="SF Pro Display, Helvetica" font-size="16" fill="#4a4f63" text-anchor="end">US-East ▾</text>
+
+  <rect x="180" y="840" width="280" height="70" rx="24" ry="24" fill="#0a0f29"/>
+  <text x="320" y="884" font-family="SF Pro Display, Helvetica" font-size="24" fill="#ffffff" text-anchor="middle">Save defaults</text>
+
+  <text x="320" y="950" font-family="SF Pro Display, Helvetica" font-size="16" fill="#4a4f63" text-anchor="middle">Need another platform?</text>
+  <rect x="220" y="980" width="200" height="56" rx="20" ry="20" fill="#ffffff" stroke="#0a0f29" stroke-width="2"/>
+  <text x="320" y="1016" font-family="SF Pro Display, Helvetica" font-size="18" fill="#0a0f29" text-anchor="middle">Add via OAuth</text>
+</svg>

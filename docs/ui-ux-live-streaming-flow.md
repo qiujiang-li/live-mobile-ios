@@ -39,6 +39,10 @@ The following lightweight wireframes provide a visual reference for the core mom
 
   ![Platform selection modal sketch](mockups/platform-selection.svg)
 
+- **Platform Account Settings** – illustrates the dedicated screen for connecting platform accounts, configuring defaults, and triggering OAuth-based reauthentication.
+
+  ![Platform account settings sketch](mockups/platform-account-settings.svg)
+
 - **Preview Tab** – visualizes the live monitoring space with composited output, platform health tiles, and stream controls.
 
   ![Preview tab sketch](mockups/preview-tab.svg)
@@ -80,9 +84,25 @@ The Settings screen organizes options into sections that mirror the overlay comb
 - Detail sheet for each avatar includes animation style preview, voice modulation toggle, and posture presets.
 
 ### Platform Settings
-- List of connected platforms (TikTok, YouTube, Twitch) with status chips (Connected, Requires Login).
-- `Manage Platforms` button opens a modal to add/remove accounts.
+- List of connected platforms (TikTok, YouTube, Twitch) with status chips (Connected, Requires Login) and quick toggles to auto-select them for broadcasts.
+- `Manage Platforms` button opens a full-screen account hub where creators connect, refresh, and remove destinations.
 - Default multi-select toggle to pre-select platforms when tapping `Go Live`.
+
+### Manage Platforms Flow
+1. **Account Hub Screen**
+   - Displays each supported platform with connection status, active account identity, and call-to-action buttons (`Connect`, `Reconnect`, or `Re-authenticate`).
+   - Provides per-platform default settings surfaced as list rows—e.g., YouTube privacy level, Twitch ingest server, or TikTok category—mirroring the new mockup.
+2. **Add Platform**
+   - Tapping `Add via OAuth` launches an in-app browser or SFSafariViewController to walk through each platform’s OAuth 2.0 authorization flow.
+   - The app requests scopes aligned with required streaming APIs (e.g., `youtube.readonly`, `tiktok.live.stream`, `channel:manage:broadcast`).
+3. **OAuth 2.0 Integration**
+   - After the user grants access, the OAuth redirect URI returns authorization codes to the app backend, which exchanges them for access and refresh tokens.
+   - Refresh tokens are stored securely (Keychain on-device plus encrypted sync with the cloud overlay service) to renew expiring sessions without user friction.
+   - If a refresh fails, the platform card surfaces an "Action required" banner prompting reauthentication before the next stream.
+4. **Account Removal**
+   - Swipe actions or an overflow menu allow disconnecting a platform, revoking tokens server-side and clearing defaults.
+5. **Save Defaults**
+   - Changes only propagate to the launch screen and Go Live pre-selection once the user taps `Save defaults`, ensuring accidental edits are avoidable.
 
 ### Save & Reset Controls
 - `Save as Default` primary button commits all changes.
@@ -95,7 +115,7 @@ The CTA on the launch screen opens a modal sheet to finalize the broadcast.
    - Displays the current overlay combination thumbnail, name, and key settings (e.g., background title or avatar name).
    - `Change` link returns to the Settings screen if adjustments are needed.
 2. **Platform Picker**
-   - Checklist of available platforms with live status indicators.
+   - Checklist of available platforms with live status indicators and the ability to jump into detailed settings for any account via a chevron link.
    - Selecting multiple platforms shows expected total bitrate and estimated latency.
 3. **Streaming Summary**
    - Shows stream title (editable), privacy options, and estimated start time.
