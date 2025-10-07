@@ -31,6 +31,10 @@ The following lightweight wireframes provide a visual reference for the core mom
 
   ![Overlay settings sketch](mockups/overlay-settings.svg)
 
+- **Virtual Background Library** – full-screen gallery for browsing curated backdrops, adding media from the device, and confirming the selection.
+
+  ![Virtual background library sketch](mockups/virtual-background-library.svg)
+
 - **Platform Selection Modal** – demonstrates the confirmation sheet that appears after tapping `Go Live`, allowing multi-select of streaming destinations.
 
   ![Platform selection modal sketch](mockups/platform-selection.svg)
@@ -63,7 +67,9 @@ The Settings screen organizes options into sections that mirror the overlay comb
 ### Virtual Background Library
 - Grid of static and animated backgrounds sourced from the cloud.
 - Filters for **Photos**, **Videos**, **Favorites**, and **Recently Used**.
-- Selecting a background updates the preview at the top of the screen.
+- Selecting a background updates the preview at the top of the screen and highlights the current default thumbnail in the Settings card.
+- `+` button in the header opens the system picker to import media from the user’s device library; imported items are appended to the curated grid with a device badge.
+- `Use Background` button confirms the choice and returns to Settings, where the chosen thumbnail is surfaced under **Virtual Background + Real Person**.
 
 ### Real Scene Configuration
 - Access device camera feeds or saved real-scene clips.
