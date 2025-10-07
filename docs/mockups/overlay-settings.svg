@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="1280" viewBox="0 0 640 1280">
+  <rect x="40" y="40" width="560" height="1200" rx="60" ry="60" fill="#ffffff" stroke="#0a0f29" stroke-width="4"/>
+  <rect x="80" y="120" width="200" height="70" rx="20" ry="20" fill="#f0f2f7"/>
+  <text x="140" y="165" font-family="SF Pro Display, Helvetica" font-size="26" fill="#0a0f29" text-anchor="middle">Settings</text>
+  <text x="500" y="165" font-family="SF Pro Display, Helvetica" font-size="20" fill="#4a4f63" text-anchor="middle">Done</text>
+
+  <text x="320" y="230" font-family="SF Pro Display, Helvetica" font-size="22" fill="#4a4f63" text-anchor="middle">Overlay presets</text>
+
+  <rect x="100" y="260" width="440" height="220" rx="28" ry="28" fill="#eef5ff" stroke="#9bbef5" stroke-width="3"/>
+  <text x="320" y="310" font-family="SF Pro Display, Helvetica" font-size="22" fill="#0a0f29" text-anchor="middle">Virtual Background + Real Person</text>
+  <text x="320" y="350" font-family="SF Pro Display, Helvetica" font-size="16" fill="#4a4f63" text-anchor="middle">Photo &amp; video library with search</text>
+  <text x="120" y="370" font-family="SF Pro Display, Helvetica" font-size="16" fill="#4a4f63">Current default</text>
+  <rect x="120" y="380" width="150" height="96" rx="16" ry="16" fill="#ffffff" stroke="#4a90e2" stroke-width="3"/>
+  <rect x="132" y="392" width="126" height="72" rx="12" ry="12" fill="#d2e5ff"/>
+  <text x="195" y="468" font-family="SF Pro Display, Helvetica" font-size="14" fill="#0a0f29" text-anchor="middle">Sunset Studio</text>
+  <rect x="290" y="380" width="210" height="96" rx="16" ry="16" fill="#ffffff" stroke="#d8dbe6" stroke-width="2" stroke-dasharray="10 8"/>
+  <text x="395" y="418" font-family="SF Pro Display, Helvetica" font-size="14" fill="#4a4f63" text-anchor="middle">Tap to change</text>
+  <text x="395" y="442" font-family="SF Pro Display, Helvetica" font-size="12" fill="#9ba2b6" text-anchor="middle">Opens Virtual Backgrounds</text>
+
+  <rect x="100" y="520" width="440" height="180" rx="28" ry="28" fill="#ffffff" stroke="#d8dbe6" stroke-width="3"/>
+  <text x="320" y="570" font-family="SF Pro Display, Helvetica" font-size="22" fill="#0a0f29" text-anchor="middle">Real Scene + Real Person</text>
+  <text x="320" y="610" font-family="SF Pro Display, Helvetica" font-size="16" fill="#4a4f63" text-anchor="middle">Adjust on-device camera framing</text>
+  <rect x="130" y="630" width="380" height="50" rx="14" ry="14" fill="#f5f7fb" stroke="#d8dbe6" stroke-width="1"/>
+  <text x="320" y="660" font-family="SF Pro Display, Helvetica" font-size="16" fill="#4a4f63" text-anchor="middle">Guided camera placement tips</text>
+
+  <rect x="100" y="730" width="440" height="220" rx="28" ry="28" fill="#fff6ed" stroke="#f3b27a" stroke-width="3"/>
+  <text x="320" y="780" font-family="SF Pro Display, Helvetica" font-size="22" fill="#0a0f29" text-anchor="middle">Real Scene + Avatar</text>
+  <text x="320" y="820" font-family="SF Pro Display, Helvetica" font-size="16" fill="#4a4f63" text-anchor="middle">Avatar wardrobe &amp; expression picker</text>
+  <rect x="130" y="840" width="380" height="90" rx="18" ry="18" fill="#ffffff" stroke="#f3b27a" stroke-width="2" stroke-dasharray="12 10"/>
+  <text x="320" y="890" font-family="SF Pro Display, Helvetica" font-size="16" fill="#f3b27a" text-anchor="middle">Scrollable avatar carousel</text>
+
+  <text x="120" y="1040" font-family="SF Pro Display, Helvetica" font-size="18" fill="#4a4f63">Streaming platforms</text>
+  <rect x="100" y="1060" width="440" height="140" rx="22" ry="22" fill="#ffffff" stroke="#d8dbe6" stroke-width="3"/>
+  <g font-family="SF Pro Display, Helvetica" font-size="18" fill="#0a0f29">
+    <text x="160" y="1110">TikTok</text>
+    <text x="160" y="1150">YouTube</text>
+    <text x="160" y="1190">Twitch</text>
+  </g>
+  <g fill="#4caf50">
+    <circle cx="120" cy="1100" r="16"/>
+    <circle cx="120" cy="1140" r="16"/>
+    <circle cx="120" cy="1180" r="16"/>
+  </g>
+  <g fill="#ffffff" font-size="16" font-family="SF Pro Display, Helvetica" text-anchor="middle">
+    <text x="120" y="1106">✓</text>
+    <text x="120" y="1146">✓</text>
+    <text x="120" y="1186">✓</text>
+  </g>
+</svg>
