@@ -20,6 +20,25 @@ flowchart LR
     LiveState -->|End Stream| Launch
 ```
 
+## Sketch Mockups
+The following lightweight wireframes provide a visual reference for the core moments of the flow. Each sketch illustrates the spatial hierarchy and primary actions without prescribing final visual polish.
+
+- **Launch Overlay Screen** – highlights the default overlay preset, quick destination review, and the prominent `Go Live` CTA.
+
+  ![Launch overlay screen sketch](mockups/launch-overlay.svg)
+
+- **Overlay Settings** – showcases the three overlay combinations with expandable configuration cards and persistent platform toggles.
+
+  ![Overlay settings sketch](mockups/overlay-settings.svg)
+
+- **Platform Selection Modal** – demonstrates the confirmation sheet that appears after tapping `Go Live`, allowing multi-select of streaming destinations.
+
+  ![Platform selection modal sketch](mockups/platform-selection.svg)
+
+- **Preview Tab** – visualizes the live monitoring space with composited output, platform health tiles, and stream controls.
+
+  ![Preview tab sketch](mockups/preview-tab.svg)
+
 ## Launch Overlay Screen
 The first screen greets the user with their default overlay combination applied to the camera feed. Key elements:
 
