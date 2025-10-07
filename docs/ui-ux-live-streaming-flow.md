@@ -90,6 +90,7 @@ The Settings screen organizes options into sections that mirror the overlay comb
 
 ### Manage Platforms Flow
 1. **Account Hub Screen**
+   - Accessible from Settings or the `＋ Add platform` control in the Go Live picker without losing in-progress launch details.
    - Displays each supported platform with connection status, active account identity, and call-to-action buttons (`Connect`, `Reconnect`, or `Re-authenticate`).
    - Provides per-platform default settings surfaced as list rows—e.g., YouTube privacy level, Twitch ingest server, or TikTok category—mirroring the new mockup.
 2. **Add Platform**
@@ -115,7 +116,10 @@ The CTA on the launch screen opens a modal sheet to finalize the broadcast.
    - Displays the current overlay combination thumbnail, name, and key settings (e.g., background title or avatar name).
    - `Change` link returns to the Settings screen if adjustments are needed.
 2. **Platform Picker**
-   - Checklist of available platforms with live status indicators and the ability to jump into detailed settings for any account via a chevron link.
+   - Checklist of available platforms with live status indicators.
+   - A trailing `Details ›` link on each row opens a slide-up destination sheet with context-specific actions (edit stream metadata, toggle chat relays, view ingest health) while still in the Go Live flow.
+   - When a platform needs attention (e.g., Twitch reconnection), the sheet escalates to a full-screen OAuth reconnect sequence and returns the user to the picker on success.
+   - `＋ Add platform` button opens the Manage Platforms hub so a new destination can be connected without abandoning the launch context.
    - Selecting multiple platforms shows expected total bitrate and estimated latency.
 3. **Streaming Summary**
    - Shows stream title (editable), privacy options, and estimated start time.
