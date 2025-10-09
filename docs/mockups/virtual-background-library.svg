@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="1280" viewBox="0 0 640 1280">
+  <rect x="40" y="40" width="560" height="1200" rx="60" ry="60" fill="#ffffff" stroke="#0a0f29" stroke-width="4"/>
+  <text x="120" y="130" font-family="SF Pro Display, Helvetica" font-size="22" fill="#4a4f63">Back</text>
+  <text x="320" y="130" font-family="SF Pro Display, Helvetica" font-size="26" fill="#0a0f29" text-anchor="middle">Virtual Backgrounds</text>
+  <rect x="480" y="96" width="80" height="48" rx="16" ry="16" fill="#eef5ff" stroke="#4a90e2" stroke-width="2"/>
+  <text x="520" y="128" font-family="SF Pro Display, Helvetica" font-size="28" fill="#4a90e2" text-anchor="middle">+</text>
+  <text x="520" y="158" font-family="SF Pro Display, Helvetica" font-size="12" fill="#4a90e2" text-anchor="middle">Add</text>
+
+  <rect x="120" y="180" width="400" height="70" rx="24" ry="24" fill="#f5f7fb" stroke="#d8dbe6" stroke-width="2"/>
+  <g font-family="SF Pro Display, Helvetica" font-size="16" fill="#4a4f63" text-anchor="middle">
+    <text x="200" y="222">Photos</text>
+    <text x="320" y="222">Videos</text>
+    <text x="440" y="222">Favorites</text>
+  </g>
+  <rect x="152" y="190" width="120" height="50" rx="20" ry="20" fill="#ffffff" stroke="#4a90e2" stroke-width="2"/>
+  <text x="212" y="222" font-family="SF Pro Display, Helvetica" font-size="16" fill="#0a0f29" text-anchor="middle">All</text>
+
+  <text x="120" y="270" font-family="SF Pro Display, Helvetica" font-size="18" fill="#4a4f63">Cloud library</text>
+  <text x="120" y="300" font-family="SF Pro Display, Helvetica" font-size="14" fill="#9ba2b6">Tap a tile to preview instantly</text>
+
+  <g>
+    <rect x="120" y="320" width="140" height="180" rx="28" ry="28" fill="#d2e5ff"/>
+    <rect x="126" y="326" width="128" height="168" rx="24" ry="24" fill="url(#grad1)" stroke="#4a90e2" stroke-width="4"/>
+    <text x="190" y="520" font-family="SF Pro Display, Helvetica" font-size="14" fill="#0a0f29" text-anchor="middle">Sunset Studio</text>
+    <circle cx="230" cy="350" r="20" fill="#4caf50" stroke="#ffffff" stroke-width="4"/>
+    <text x="230" y="356" font-family="SF Pro Display, Helvetica" font-size="18" fill="#ffffff" text-anchor="middle">✓</text>
+    <text x="230" y="384" font-family="SF Pro Display, Helvetica" font-size="10" fill="#ffffff" text-anchor="middle">Selected</text>
+  </g>
+
+  <g fill="#d8dbe6">
+    <rect x="280" y="320" width="140" height="180" rx="28" ry="28"/>
+    <rect x="440" y="320" width="140" height="180" rx="28" ry="28"/>
+    <rect x="120" y="520" width="140" height="180" rx="28" ry="28"/>
+    <rect x="280" y="520" width="140" height="180" rx="28" ry="28"/>
+    <rect x="440" y="520" width="140" height="180" rx="28" ry="28"/>
+  </g>
+  <g font-family="SF Pro Display, Helvetica" font-size="14" fill="#4a4f63" text-anchor="middle">
+    <text x="350" y="520">Neon Loft</text>
+    <text x="510" y="520">Nature Loop</text>
+    <text x="190" y="720">Studio Brick</text>
+    <text x="350" y="720">Galaxy Drift</text>
+    <text x="510" y="720">Conference</text>
+  </g>
+
+  <rect x="120" y="760" width="440" height="80" rx="22" ry="22" fill="#eef5ff" stroke="#9bbef5" stroke-width="2"/>
+  <text x="340" y="805" font-family="SF Pro Display, Helvetica" font-size="16" fill="#4a4f63" text-anchor="middle">Preview updates instantly in the header canvas</text>
+
+  <rect x="140" y="900" width="400" height="70" rx="24" ry="24" fill="#4a90e2"/>
+  <text x="340" y="944" font-family="SF Pro Display, Helvetica" font-size="24" fill="#ffffff" text-anchor="middle">Use Background</text>
+
+  <text x="120" y="1020" font-family="SF Pro Display, Helvetica" font-size="14" fill="#9ba2b6">Changes save to cloud defaults once confirmed.</text>
+
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffcc80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff7043;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
