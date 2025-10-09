@@ -43,6 +43,10 @@ The following lightweight wireframes provide a visual reference for the core mom
 
   ![Platform account settings sketch](mockups/platform-account-settings.svg)
 
+- **OAuth Login Screen** – demonstrates the branded OAuth 2.0 entry point used when connecting Meta, Google, or TikTok accounts.
+
+  ![OAuth login screen sketch](mockups/oauth-login.svg)
+
 - **Preview Tab** – visualizes the live monitoring space with composited output, platform health tiles, and stream controls.
 
   ![Preview tab sketch](mockups/preview-tab.svg)
@@ -94,10 +98,11 @@ The Settings screen organizes options into sections that mirror the overlay comb
    - Displays each supported platform with connection status, active account identity, and call-to-action buttons (`Connect`, `Reconnect`, or `Re-authenticate`).
    - Provides per-platform default settings surfaced as list rows—e.g., YouTube privacy level, Twitch ingest server, or TikTok category—mirroring the new mockup.
 2. **Add Platform**
-   - Tapping `Add via OAuth` launches an in-app browser or SFSafariViewController to walk through each platform’s OAuth 2.0 authorization flow.
+   - Tapping `Add via OAuth` opens a branded provider chooser (see OAuth login mockup) before launching an in-app browser or SFSafariViewController for the selected platform’s OAuth 2.0 authorization flow.
+   - Quick-select buttons for **Meta**, **Google**, and **TikTok** surface status states (Connected, Needs attention) and accelerate re-connections without searching the account list.
    - The app requests scopes aligned with required streaming APIs (e.g., `youtube.readonly`, `tiktok.live.stream`, `channel:manage:broadcast`).
 3. **OAuth 2.0 Integration**
-   - After the user grants access, the OAuth redirect URI returns authorization codes to the app backend, which exchanges them for access and refresh tokens.
+   - After the user grants access, the OAuth redirect URI returns authorization codes to the app backend, which exchanges them for access and refresh tokens while recording the provider used.
    - Refresh tokens are stored securely (Keychain on-device plus encrypted sync with the cloud overlay service) to renew expiring sessions without user friction.
    - If a refresh fails, the platform card surfaces an "Action required" banner prompting reauthentication before the next stream.
 4. **Account Removal**
