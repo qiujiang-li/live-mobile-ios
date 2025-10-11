@@ -1,29 +1,101 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="1280" viewBox="0 0 640 1280">
-  <rect x="40" y="40" width="560" height="1200" rx="60" ry="60" fill="#f5f7fb" stroke="#d8dbe6" stroke-width="4"/>
-  <text x="320" y="140" font-family="SF Pro Display, Helvetica" font-size="30" fill="#0a0f29" text-anchor="middle">Connect Platform Account</text>
-  <text x="320" y="180" font-family="SF Pro Display, Helvetica" font-size="18" fill="#4a4f63" text-anchor="middle">Choose a provider to continue with OAuth 2.0</text>
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1f2a44"/>
+    </linearGradient>
+    <linearGradient id="ctaGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feOffset dy="18" in="SourceAlpha" result="shadowOffset"/>
+      <feGaussianBlur stdDeviation="24" in="shadowOffset" result="shadowBlur"/>
+      <feColorMatrix in="shadowBlur" type="matrix" values="0 0 0 0 0.07  0 0 0 0 0.09  0 0 0 0 0.19  0 0 0 0.32 0" result="shadow"/>
+      <feBlend in="SourceGraphic" in2="shadow" mode="normal"/>
+    </filter>
+  </defs>
 
-  <rect x="120" y="240" width="400" height="220" rx="32" ry="32" fill="#ffffff" stroke="#d8dbe6" stroke-width="2"/>
-  <text x="320" y="286" font-family="SF Pro Display, Helvetica" font-size="20" fill="#0a0f29" text-anchor="middle">Select platform to authenticate</text>
-  <text x="320" y="320" font-family="SF Pro Display, Helvetica" font-size="16" fill="#4a4f63" text-anchor="middle">Link your account so streams can publish on your behalf.</text>
+  <rect width="640" height="1280" fill="url(#bgGradient)"/>
 
-  <rect x="140" y="360" width="360" height="68" rx="20" ry="20" fill="#1877f2"/>
-  <text x="320" y="404" font-family="SF Pro Display, Helvetica" font-size="22" fill="#ffffff" text-anchor="middle">Continue with Meta</text>
+  <g transform="translate(60, 120)">
+    <rect width="520" height="1040" rx="48" fill="#111827" opacity="0.35"/>
+    <rect x="12" y="12" width="496" height="1016" rx="44" fill="#f8fafc"/>
 
-  <rect x="140" y="440" width="360" height="68" rx="20" ry="20" fill="#ffffff" stroke="#d8dbe6" stroke-width="2"/>
-  <text x="320" y="484" font-family="SF Pro Display, Helvetica" font-size="22" fill="#0a0f29" text-anchor="middle">Continue with Google</text>
+    <g transform="translate(64, 80)">
+      <rect width="368" height="72" rx="24" fill="#e2e8f0" opacity="0.6"/>
+      <g transform="translate(24, 20)">
+        <circle cx="16" cy="16" r="16" fill="#6366f1" opacity="0.18"/>
+        <path d="M11 16l6 6 12-12" fill="none" stroke="#6366f1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <text x="88" y="46" font-family="SF Pro Display, Helvetica" font-size="22" fill="#1f2937">Secure OAuth connection</text>
+    </g>
 
-  <rect x="140" y="520" width="360" height="68" rx="20" ry="20" fill="#000000"/>
-  <text x="320" y="564" font-family="SF Pro Display, Helvetica" font-size="22" fill="#ffffff" text-anchor="middle">Continue with TikTok</text>
+    <g transform="translate(64, 200)" filter="url(#cardShadow)">
+      <rect width="384" height="560" rx="36" fill="#ffffff"/>
+      <text x="48" y="88" font-family="SF Pro Display, Helvetica" font-size="28" font-weight="600" fill="#111827">Authenticate your studio</text>
+      <text x="48" y="132" font-family="SF Pro Display, Helvetica" font-size="18" fill="#6b7280">
+        <tspan x="48" y="132">Choose your platform account to publish streams</tspan>
+        <tspan x="48" y="158">and manage experiences.</tspan>
+      </text>
 
-  <text x="320" y="620" font-family="SF Pro Display, Helvetica" font-size="16" fill="#4a4f63" text-anchor="middle">We never post without permission. You can revoke access at any time.</text>
+      <g transform="translate(48, 180)">
+        <circle cx="18" cy="18" r="18" fill="#eef2ff"/>
+        <text x="18" y="24" font-family="SF Pro Display, Helvetica" font-size="18" text-anchor="middle" fill="#4c51bf">1</text>
+        <text x="56" y="24" font-family="SF Pro Display, Helvetica" font-size="18" fill="#1f2937">Single sign-on with secure OAuth 2.0.</text>
+      </g>
+      <g transform="translate(48, 232)">
+        <circle cx="18" cy="18" r="18" fill="#ecfeff"/>
+        <text x="18" y="24" font-family="SF Pro Display, Helvetica" font-size="18" text-anchor="middle" fill="#0f766e">2</text>
+        <text x="56" y="24" font-family="SF Pro Display, Helvetica" font-size="18" fill="#1f2937">Granular permissions reviewed before approval.</text>
+      </g>
+      <g transform="translate(48, 284)">
+        <circle cx="18" cy="18" r="18" fill="#fef3c7"/>
+        <text x="18" y="24" font-family="SF Pro Display, Helvetica" font-size="18" text-anchor="middle" fill="#d97706">3</text>
+        <text x="56" y="24" font-family="SF Pro Display, Helvetica" font-size="18" fill="#1f2937">Revoke access or switch accounts anytime.</text>
+      </g>
 
-  <rect x="160" y="680" width="320" height="60" rx="20" ry="20" fill="#ffffff" stroke="#0a0f29" stroke-width="2" stroke-dasharray="12 8"/>
-  <text x="320" y="716" font-family="SF Pro Display, Helvetica" font-size="20" fill="#0a0f29" text-anchor="middle">Use different provider</text>
+      <g transform="translate(48, 356)">
+        <rect width="288" height="68" rx="20" fill="#1877f2"/>
+        <circle cx="34" cy="34" r="18" fill="#0b5ed7" opacity="0.9"/>
+        <text x="34" y="40" font-family="SF Pro Display, Helvetica" font-size="20" text-anchor="middle" fill="#ffffff">f</text>
+        <text x="78" y="42" font-family="SF Pro Display, Helvetica" font-size="21" fill="#ffffff">Continue with Meta</text>
+        <text x="252" y="42" font-family="SF Pro Display, Helvetica" font-size="22" fill="#ffffff">→</text>
+      </g>
 
-  <text x="320" y="780" font-family="SF Pro Display, Helvetica" font-size="16" fill="#4a4f63" text-anchor="middle">Having trouble?</text>
-  <text x="320" y="812" font-family="SF Pro Display, Helvetica" font-size="18" fill="#1877f2" text-anchor="middle">Open help center</text>
+      <g transform="translate(48, 436)">
+        <rect width="288" height="68" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+        <circle cx="34" cy="34" r="18" fill="#fef3c7"/>
+        <text x="34" y="40" font-family="SF Pro Display, Helvetica" font-size="20" text-anchor="middle" fill="#f97316">G</text>
+        <text x="78" y="42" font-family="SF Pro Display, Helvetica" font-size="21" fill="#111827">Continue with Google</text>
+        <text x="252" y="42" font-family="SF Pro Display, Helvetica" font-size="22" fill="#111827">→</text>
+      </g>
 
-  <rect x="220" y="900" width="200" height="60" rx="20" ry="20" fill="#0a0f29"/>
-  <text x="320" y="936" font-family="SF Pro Display, Helvetica" font-size="22" fill="#ffffff" text-anchor="middle">Cancel</text>
+      <g transform="translate(48, 516)">
+        <rect width="288" height="68" rx="20" fill="#000000"/>
+        <circle cx="34" cy="34" r="18" fill="#ffffff" opacity="0.12"/>
+        <text x="34" y="40" font-family="SF Pro Display, Helvetica" font-size="20" text-anchor="middle" fill="#ffffff">Tik</text>
+        <text x="78" y="42" font-family="SF Pro Display, Helvetica" font-size="21" fill="#ffffff">Continue with TikTok</text>
+        <text x="252" y="42" font-family="SF Pro Display, Helvetica" font-size="22" fill="#ffffff">→</text>
+      </g>
+    </g>
+
+    <g transform="translate(64, 800)">
+      <text x="0" y="0" font-family="SF Pro Display, Helvetica" font-size="16" fill="#6b7280">By continuing you agree to Live Studio's</text>
+      <text x="0" y="30" font-family="SF Pro Display, Helvetica" font-size="16" fill="#6366f1">Terms of Service</text>
+      <text x="168" y="30" font-family="SF Pro Display, Helvetica" font-size="16" fill="#6b7280">and</text>
+      <text x="210" y="30" font-family="SF Pro Display, Helvetica" font-size="16" fill="#6366f1">Privacy Policy</text>
+    </g>
+
+    <g transform="translate(64, 914)">
+      <rect width="296" height="72" rx="24" fill="url(#ctaGradient)"/>
+      <text x="32" y="44" font-family="SF Pro Display, Helvetica" font-size="20" fill="#ffffff">Need enterprise SSO?</text>
+      <text x="32" y="66" font-family="SF Pro Display, Helvetica" font-size="16" fill="#e0e7ff">Contact our partnerships team</text>
+    </g>
+
+    <g transform="translate(64, 1030)">
+      <text x="0" y="0" font-family="SF Pro Display, Helvetica" font-size="18" fill="#1f2937">Having trouble signing in?</text>
+      <text x="0" y="32" font-family="SF Pro Display, Helvetica" font-size="18" fill="#6366f1">Open the Creator Support Center</text>
+    </g>
+  </g>
 </svg>
