@@ -15,7 +15,6 @@ struct ContentView: View {
             onMeta: { startOAuth(for: .meta) },
             onGoogle: { startOAuth(for: .google) },
             onTikTok: { startOAuth(for: .tiktok) },
-            onUseDifferentProvider: { /* Hook up when additional providers exist */ },
             onOpenHelpCenter: openHelpCenter,
             onCancel: cancelAuthentication
         )

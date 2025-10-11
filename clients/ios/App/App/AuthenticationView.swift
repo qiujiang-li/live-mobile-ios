@@ -4,7 +4,6 @@ struct AuthenticationView: View {
     var onMeta: () -> Void = {}
     var onGoogle: () -> Void = {}
     var onTikTok: () -> Void = {}
-    var onUseDifferentProvider: () -> Void = {}
     var onOpenHelpCenter: () -> Void = {}
     var onCancel: () -> Void = {}
 
@@ -13,113 +12,102 @@ struct AuthenticationView: View {
             Color.oauthBackground
                 .ignoresSafeArea()
 
-            VStack(spacing: 32) {
-                VStack(spacing: 12) {
-                    Text("Connect Platform Account")
-                        .font(.system(size: 30, weight: .semibold, design: .default))
-                        .foregroundStyle(Color.primaryText)
-                        .multilineTextAlignment(.center)
-
-                    Text("Choose a provider to continue with OAuth 2.0")
-                        .font(.system(size: 18, weight: .regular, design: .default))
-                        .foregroundStyle(Color.secondaryText)
-                        .multilineTextAlignment(.center)
-                }
-                .padding(.top, 24)
-
-                VStack(spacing: 32) {
-                    VStack(spacing: 16) {
-                        Text("Select platform to authenticate")
-                            .font(.system(size: 20, weight: .semibold, design: .default))
-                            .foregroundStyle(Color.primaryText)
-                            .multilineTextAlignment(.center)
-
-                        Text("Link your account so streams can publish on your behalf.")
-                            .font(.system(size: 16, weight: .regular, design: .default))
-                            .foregroundStyle(Color.secondaryText)
-                            .multilineTextAlignment(.center)
-                            .fixedSize(horizontal: false, vertical: true)
-
-                        VStack(spacing: 16) {
-                            OAuthProviderButton(title: "Continue with Meta", backgroundColor: .metaBlue, foregroundColor: .white) {
-                                onMeta()
-                            }
-
-                            OAuthProviderButton(title: "Continue with Google", backgroundColor: .white, foregroundColor: Color.primaryText, borderColor: Color.cardBorder) {
-                                onGoogle()
-                            }
-
-                            OAuthProviderButton(title: "Continue with TikTok", backgroundColor: .black, foregroundColor: .white) {
-                                onTikTok()
-                            }
-                        }
-
-                        Text("We never post without permission. You can revoke access at any time.")
-                            .font(.system(size: 16, weight: .regular, design: .default))
-                            .foregroundStyle(Color.secondaryText)
-                            .multilineTextAlignment(.center)
-                            .padding(.top, 8)
-                    }
-
-                    Button(action: onUseDifferentProvider) {
-                        Text("Use different provider")
-                            .font(.system(size: 20, weight: .semibold, design: .default))
-                            .foregroundStyle(Color.primaryText)
-                            .frame(maxWidth: .infinity)
-                            .padding(.vertical, 16)
-                    }
-                    .buttonStyle(PlainButtonStyle())
-                    .background(
-                        RoundedRectangle(cornerRadius: 20)
-                            .stroke(Color.primaryText, style: StrokeStyle(lineWidth: 2, dash: [12, 8]))
-                    )
+            VStack(spacing: 24) {
+                VStack(spacing: 16) {
+                    Image(systemName: "sparkles")
+                        .font(.system(size: 42, weight: .light))
+                        .foregroundStyle(Color.accentPrimary)
+                        .padding(18)
+                        .background(
+                            Circle()
+                                .fill(Color.accentPrimary.opacity(0.12))
+                        )
 
                     VStack(spacing: 8) {
-                        Text("Having trouble?")
-                            .font(.system(size: 16, weight: .regular, design: .default))
-                            .foregroundStyle(Color.secondaryText)
+                        Text("Sign in to Live Studio")
+                            .font(.system(size: 28, weight: .semibold))
+                            .foregroundStyle(Color.primaryText)
 
-                        Button(action: onOpenHelpCenter) {
-                            Text("Open help center")
-                                .font(.system(size: 18, weight: .semibold, design: .default))
-                                .foregroundStyle(Color.metaBlue)
-                        }
-                        .buttonStyle(.plain)
+                        Text("Choose your account to continue.")
+                            .font(.system(size: 17, weight: .regular))
+                            .foregroundStyle(Color.secondaryText)
                     }
                 }
-                .padding(32)
-                .frame(maxWidth: .infinity)
-                .background(
-                    RoundedRectangle(cornerRadius: 32, style: .continuous)
-                        .fill(Color.white)
-                        .shadow(color: Color.black.opacity(0.05), radius: 20, x: 0, y: 12)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 32, style: .continuous)
-                                .stroke(Color.cardBorder, lineWidth: 2)
-                        )
-                )
-                .padding(.horizontal, 32)
+
+                VStack(spacing: 14) {
+                    OAuthProviderButton(
+                        title: "Continue with Meta",
+                        icon: "link.circle.fill",
+                        backgroundColor: .metaBlue,
+                        foregroundColor: .white
+                    ) {
+                        onMeta()
+                    }
+
+                    OAuthProviderButton(
+                        title: "Continue with Google",
+                        icon: "globe",
+                        backgroundColor: .white,
+                        foregroundColor: Color.primaryText,
+                        borderColor: Color.cardBorder
+                    ) {
+                        onGoogle()
+                    }
+
+                    OAuthProviderButton(
+                        title: "Continue with TikTok",
+                        icon: "music.quarternote.3",
+                        backgroundColor: .black,
+                        foregroundColor: .white
+                    ) {
+                        onTikTok()
+                    }
+                }
+
+                VStack(spacing: 4) {
+                    Text("By continuing you agree to Live Studio's Terms and Privacy Policy.")
+                        .font(.system(size: 13, weight: .regular))
+                        .foregroundStyle(Color.secondaryText)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 24)
+
+                    Button(action: onOpenHelpCenter) {
+                        Text("Need help signing in?")
+                            .font(.system(size: 15, weight: .semibold))
+                            .foregroundStyle(Color.accentPrimary)
+                    }
+                    .buttonStyle(.plain)
+                }
 
                 Button(action: onCancel) {
                     Text("Cancel")
-                        .font(.system(size: 22, weight: .semibold, design: .default))
-                        .foregroundStyle(Color.white)
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 18)
-                        .background(Color.primaryText)
-                        .cornerRadius(20)
+                        .font(.system(size: 18, weight: .semibold))
+                        .foregroundStyle(Color.secondaryText)
+                        .padding(.horizontal, 24)
+                        .padding(.vertical, 12)
+                        .background(
+                            Capsule()
+                                .fill(Color.white)
+                                .shadow(color: Color.black.opacity(0.04), radius: 12, x: 0, y: 8)
+                        )
                 }
                 .buttonStyle(.plain)
-                .padding(.horizontal, 80)
-                .padding(.bottom, 16)
             }
-            .padding(.vertical, 24)
+            .padding(.horizontal, 32)
+            .padding(.vertical, 48)
+            .background(
+                RoundedRectangle(cornerRadius: 32, style: .continuous)
+                    .fill(Color.white)
+                    .shadow(color: Color.black.opacity(0.06), radius: 30, x: 0, y: 24)
+            )
+            .padding(.horizontal, 24)
         }
     }
 }
 
 private struct OAuthProviderButton: View {
     var title: String
+    var icon: String
     var backgroundColor: Color
     var foregroundColor: Color
     var borderColor: Color? = nil
@@ -127,34 +115,46 @@ private struct OAuthProviderButton: View {
 
     var body: some View {
         Button(action: action) {
-            Text(title)
-                .font(.system(size: 22, weight: .semibold, design: .default))
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 18)
-                .foregroundStyle(foregroundColor)
-                .background(
-                    RoundedRectangle(cornerRadius: 20, style: .continuous)
-                        .fill(backgroundColor)
-                )
-                .overlay(
-                    Group {
-                        if let borderColor {
-                            RoundedRectangle(cornerRadius: 20, style: .continuous)
-                                .stroke(borderColor, lineWidth: 2)
-                        }
+            HStack(spacing: 16) {
+                Image(systemName: icon)
+                    .font(.system(size: 20, weight: .medium))
+                    .frame(width: 32, height: 32)
+                    .foregroundStyle(foregroundColor.opacity(0.9))
+
+                Text(title)
+                    .font(.system(size: 18, weight: .semibold))
+                    .foregroundStyle(foregroundColor)
+
+                Spacer()
+            }
+            .padding(.vertical, 16)
+            .padding(.horizontal, 20)
+            .frame(maxWidth: .infinity)
+            .background(
+                RoundedRectangle(cornerRadius: 22, style: .continuous)
+                    .fill(backgroundColor)
+            )
+            .overlay(
+                Group {
+                    if let borderColor {
+                        RoundedRectangle(cornerRadius: 22, style: .continuous)
+                            .stroke(borderColor, lineWidth: 1.5)
                     }
-                )
+                }
+            )
         }
         .buttonStyle(.plain)
+        .shadow(color: Color.black.opacity(0.08), radius: 12, x: 0, y: 6)
     }
 }
 
 private extension Color {
-    static let oauthBackground = Color(red: 0xf5 / 255, green: 0xf7 / 255, blue: 0xfb / 255)
-    static let primaryText = Color(red: 0x0a / 255, green: 0x0f / 255, blue: 0x29 / 255)
-    static let secondaryText = Color(red: 0x4a / 255, green: 0x4f / 255, blue: 0x63 / 255)
-    static let cardBorder = Color(red: 0xd8 / 255, green: 0xdb / 255, blue: 0xe6 / 255)
-    static let metaBlue = Color(red: 0x18 / 255, green: 0x77 / 255, blue: 0xf2 / 255)
+    static let oauthBackground = Color(red: 242 / 255, green: 244 / 255, blue: 247 / 255)
+    static let primaryText = Color(red: 15 / 255, green: 23 / 255, blue: 42 / 255)
+    static let secondaryText = Color(red: 100 / 255, green: 116 / 255, blue: 139 / 255)
+    static let cardBorder = Color(red: 226 / 255, green: 232 / 255, blue: 240 / 255)
+    static let metaBlue = Color(red: 24 / 255, green: 119 / 255, blue: 242 / 255)
+    static let accentPrimary = Color(red: 99 / 255, green: 102 / 255, blue: 241 / 255)
 }
 
 #Preview {
